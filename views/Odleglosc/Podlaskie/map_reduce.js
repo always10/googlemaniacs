@@ -1,12 +1,12 @@
 function(doc) {
 var i;
-//Gdansk
-var XX = 18.6466384;
-var YY = 54.3520252;
+//Bialystok
+var XX = 23.1688403;
+var YY = 53.1324886;
 var dist;
 for(i in doc.Placemark)
     {
-        if(doc.Placemark[i].AddressDetails.Country.CountryName == "Polska" && doc.Placemark[i].AddressDetails.Country.AdministrativeArea.AdministrativeAreaName =="Pomorskie")
+        if(doc.Placemark[i].AddressDetails.Country.CountryName == "Polska" && doc.Placemark[i].AddressDetails.Country.AdministrativeArea.AdministrativeAreaName =="Podlaskie")
             {
                 var x = doc.Placemark[i].Point.coordinates[0];
                 var y = doc.Placemark[i].Point.coordinates[1];

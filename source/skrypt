@@ -1,0 +1,3 @@
+#!/bin/bash
+wget -O 1.txt http://maps.google.com/maps/geo?q=$1&output=json&oe=utf8&key=abcdefg
+curl -X POST http://127.0.0.1:14111/googlemaps/ -d @1.txt -H "Content-Type: application/json;charset=utf-8"
